@@ -251,8 +251,8 @@ namespace hw {
         /* ======================================================================= */
 
         bool device_default::open_tx(crypto::secret_key &tx_key) {
-            cryptonote::keypair txkey = cryptonote::keypair::generate();
-            tx_key = txkey.sec;
+            crypto::public_key pub;
+            generate_keys(pub, tx_key);
             return true;
         }
 
