@@ -112,6 +112,7 @@ if (BUILD_GUI_DEPS)
             common
             cncrypto
             ringct
+            ringct_basic
             checkpoints
             version)
 
